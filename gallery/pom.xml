@@ -1,0 +1,74 @@
+<project>
+
+<build>
+    <plugins>
+     <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <source>7</source>
+          <target>7</target>
+        </configuration>
+      </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>3.2.0</version>
+            <configuration>
+ 
+                <archive>
+                    <manifest>
+                        <mainClass>Main</mainClass>
+                    </manifest>
+                </archive>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+
+
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Gallery</groupId>
+  <artifactId>Gallery</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Photography</name>
+  
+  <dependencies>
+    <!-- Firebase SDK for Java -->
+    <dependency>
+      <groupId>com.google.firebase</groupId>
+      <artifactId>firebase-admin</artifactId>
+      <version>8.0.0</version>
+    </dependency>
+    
+    <dependency>
+	  <groupId>com.google.cloud</groupId>
+	  <artifactId>google-cloud-firestore</artifactId>
+	  <version>3.8.1</version>
+	</dependency>
+	
+	<dependency>
+	  <groupId>com.google.auth</groupId>
+	  <artifactId>google-auth-library-oauth2-http</artifactId>
+	  <version>0.23.0</version>
+	</dependency>
+
+
+
+    <!-- Google Cloud Storage library -->
+    <dependency>
+      <groupId>com.google.cloud</groupId>
+      <artifactId>google-cloud-storage</artifactId>
+      <version>1.107.0</version>
+    </dependency>
+    <dependency>
+  <groupId>ch.qos.logback</groupId>
+  <artifactId>logback-classic</artifactId>
+  <version>1.2.3</version>
+</dependency>
+
+    
+  </dependencies>
+</project>
